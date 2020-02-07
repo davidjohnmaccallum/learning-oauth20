@@ -29,6 +29,13 @@ TODO
 
 The implicit flow caters for native mobile apps and Single Page Applications (SPAs). It requires end to end HTTPS to protect the auth token. [This](https://stackoverflow.com/questions/13387698/why-is-there-an-authorization-code-flow-in-oauth2-when-implicit-flow-works-s) Stackoverflow post explains the difference between 3-LO and implicit well.
 
+The implicit flow is really easy.
+
+1. Initiate the process by visiting this link: [https://bitbucket.org/site/oauth2/authorize?client_id=CLIENT_ID&response_type=token](https://bitbucket.org/site/oauth2/authorize?client_id=CLIENT_ID&response_type=token). Be sure to replace CLIENT_ID with your Bitbucket client ID.
+1. Once the user has given permission the auth server will redirect to the configured redirect URL. This does not need to be an actual HTTP endpoint. It can be something like "myapp://oath_redirect". The redirect will include the auth token as a hash param ie. #access_token={token}&token_type=bearer.
+
+Note that the URLs are not public, they are encryped in transit by the HTTPS protocol.
+
 ## How to execute the 3-LO example
 
 For my example I am authorising to the Bitbucket API. I followed [this doc](https://confluence.atlassian.com/bitbucket/oauth-on-bitbucket-cloud-238027431.html). To create my app on Bitbucket I did the following:
