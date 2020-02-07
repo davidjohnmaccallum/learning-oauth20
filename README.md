@@ -17,6 +17,8 @@ There is an initial configuration step called "Creating an App" that you must do
 
 The 3-LO flow is for client/server style web apps. Here is a diagram of the 3-LO flow.
 
+![a diagram of the 3-LO flow](https://photos.app.goo.gl/Noq4usuU5DV6nQTt6)
+
 ## 2-LO (two-legged OAuth) flow
 
 The 2-LO flow for user not present.
