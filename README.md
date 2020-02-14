@@ -17,7 +17,7 @@ There is an initial configuration step called "Creating an App" that you must do
 
 The 3-LO flow is for client/server style web apps. Here is a diagram of the 3-LO flow.
 
-![a diagram of the 3-LO flow](https://raw.githubusercontent.com/davidjohnmaccallum/learning-oauth20/master/3-lo-flow.jpg)
+![A diagram of the 3-LO flow](https://raw.githubusercontent.com/davidjohnmaccallum/learning-oauth20/master/3-lo-flow.jpg)
 
 ## 2-LO (two-legged OAuth) flow
 
@@ -35,6 +35,8 @@ The implicit flow is really easy.
 1. Once the user has given permission the auth server will redirect to the configured redirect URL. This does not need to be an actual HTTP endpoint. It can be something like "myapp://oath_redirect". The redirect will include the auth token as a hash param ie. #access_token={token}&token_type=bearer.
 
 Note that the URLs are not public, they are encryped in transit by the HTTPS protocol.
+
+![A diagram of the implicit flow](https://raw.githubusercontent.com/davidjohnmaccallum/learning-oauth20/master/implicit-flow.jpg)
 
 ## How to execute the 3-LO example
 
